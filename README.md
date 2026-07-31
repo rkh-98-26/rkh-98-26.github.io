@@ -13,9 +13,9 @@ over to be processed, and having that data sent over to Ground control on earth.
 
 ## Architecture
 
-![Concurrency Diagram](https://github.com/rkh-98-26/rkh-98-26.github.io/blob/main/assets/Final%20Concurrency%20Diagram.png?raw=true)
+![Concurrency Diagram](https://github.com/rkh-98-26/rkh-98-26.github.io/blob/main/Final%20Concurrency%20Diagram.png?raw=true)
 
-The Temperature Sensor does a thorough check of the temeprature of the satellite's internal circuitry. This data is 
+The Temperature Sensor does a thorough check of the temperature of the satellite's internal circuitry. This data is 
 formalized as a packet containing the timestamp, packet number, circuit voltage, and temperature. This packet is sent 
 via a queue to the Temperature Monitor to simulate unwrapping the packet and checking whether the temperature is within 
 acceptable limits and flags any packets that are not. This sets off the log coordinating, which flashes the data and sends 
