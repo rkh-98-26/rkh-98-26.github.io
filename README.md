@@ -13,6 +13,8 @@ over to be processed, and having that data sent over to Ground control on earth.
 
 ## Architecture
 
+![architecture](https://github.com/rkh-98-26/rkh-98-26.github.io/blob/main/Final%20Application%20Arhcitecture.png?raw=true)
+
 ![Concurrency Diagram](https://github.com/rkh-98-26/rkh-98-26.github.io/blob/main/Final%20Concurrency%20Diagram.png?raw=true)
 
 The Temperature Sensor does a thorough check of the temperature of the satellite's internal circuitry. This data is 
