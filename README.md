@@ -1,5 +1,3 @@
-# rkh-98-26.github.io
-
 # SAT-RKH-1 — Real-Time Systems Final Capstone
 
 ## One sentence
@@ -7,7 +5,7 @@ This is a Real Time System simulating a satellite sensing the internal temperatu
 over to be processed, and having that data sent over to Ground control on earth.
 
 ## Demo
-- Video: 
+- Video: [Video Link](https://youtu.be/iNfluWkuU1s)
 - Live Wokwi: [Wokwi Link](https://wokwi.com/projects/471005401497528321)
 - Website: [Website Link](https://rkh-98-26.github.io/)
 
@@ -71,7 +69,26 @@ group allows for a single successful data transfer to single a transmission to g
 control through the antenna, which is itself signaled by a low-latency direct task 
 notification.
 
+## Additional Final Reflection
+
+If I was given more time to develop this project, I would have naturally tried to integrate all previous Applications into a singular program. In particular, I would have integrate tasks from Application 4, those being the 
+solar panels that adjust only when given a slot from a counting semaphore as well as alternating antennas activating based on a mutex. The web monitor would be developed such that it would let the user know which solar panels 
+and antennas are active and which are not. From Application 1, I would also simulate the half-duplex data transfer between the satellite and ground control using those antenna tasks, which would also be displayed on the web 
+monitor. I would also expand the telemtry data to be a wide array of sensors such as altitude and orbital pathing. I would also be more stringet with task periods and deadlines, as this particular application was not well 
+suited for that type of synchronization as it is mostly focused on Pipelining. 
+
+I had a hard time integrating the WCET measurement function into this project because it originally didn't have much material to give a noticable excution time. I had to create my own functions for the sole purpose of 
+simulating work for each task and then integrate the WCET function, which caused massive spikes because it wrapped around the ESP_LOG functions, so those had to be removed from the measurement block. I spent the most amount 
+of time debugging this to get myself in an acceptable state for running the program.
+
+The most valuable thing I learned from this project likely had to do with the setup for github itself. I learned how to create a website with github pages, fill it will fiels from the assoicated repository, and modify the 
+index file to allow for better functionality in accessing the various pieces of data it offers, specifically the project files including its README.
+
+
 ## AI Disclosure
+
+I utilized the AI LLM Google Gemini to aid me in creating and debugging this capstone project as well as the 
+associated github pages website: [AI Chat Log](https://gemini.google.com/app/1d257e6d618092e7)sclosure
 
 I utilized the AI LLM Google Gemini to aid me in creating and debugging this capstone project as well as the 
 associated github pages website: [AI Chat Log](https://gemini.google.com/app/1d257e6d618092e7)
