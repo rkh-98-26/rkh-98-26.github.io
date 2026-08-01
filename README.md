@@ -70,3 +70,8 @@ The queue allows for continuous deployment from the sensor to to the monitor. Th
 group allows for a single successful data transfer to single a transmission to ground 
 control through the antenna, which is itself signaled by a low-latency direct task 
 notification.
+
+## AI Disclosure
+
+I utilized the AI LLM Google Gemini to aid me in creating and debugging this capstone project as well as the 
+associated github pages website: [AI Chat Log](https://gemini.google.com/app/1d257e6d618092e7)
